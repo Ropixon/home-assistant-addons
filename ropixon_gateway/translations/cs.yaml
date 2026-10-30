@@ -1,0 +1,45 @@
+configuration:
+  serial_port:
+    name: USB port · automatické hledání
+    description: Ponechte auto. Dongle ověří a vybere průvodce; konkrétní cestu lze uvést jako přednostní port pro hledání.
+  region:
+    name: Rádiový region
+    description: EU868. Provozní síť vytvoříte v panelu LoRa brána.
+  baud:
+    name: Rychlost sériového rozhraní
+    description: Pro dongle Ropixon ponechte 230400. Změna vyžaduje restart aplikace.
+  mqtt_host:
+    name: Adresa MQTT brokeru
+    description: Pro místní Mosquitto ponechte core-mosquitto. Po změně aplikaci restartujte.
+  mqtt_port:
+    name: MQTT port
+  mqtt_username:
+    name: MQTT uživatel
+  mqtt_password:
+    name: MQTT heslo
+  mqtt_tls:
+    name: Šifrované MQTT připojení
+    description: Zapněte jen pro broker s platným důvěryhodným TLS certifikátem.
+  max_sensors:
+    name: Maximální počet čidel
+  pairing_rssi_filter:
+    name: Párovat jen blízké čidlo
+    description: Filtr síly signálu při hledání nových čidel. Potvrzení čidla v panelu je stále potřeba.
+  start_as_new_gateway:
+    name: Začít jako nová brána
+    description: Jen když uložený stav brány nejde přečíst. Brána dostane nové ID a všechna čidla je nutné spárovat znovu; poškozený stav zůstane uložený vedle.
+  sensor_stale_seconds:
+    name: Čas do označení dat jako starých
+    description: Nula použije dobu odvozenou z intervalu čidla. Procentní signál se časem nesnižuje.
+  frequency:
+    name: Původní frekvence · pouze převzetí starší sítě
+  sf:
+    name: Původní SF · pouze převzetí starší sítě
+  bw:
+    name: Původní BW · pouze převzetí starší sítě
+  cr:
+    name: Původní CR · pouze převzetí starší sítě
+  power:
+    name: Původní výkon · pouze převzetí starší sítě
+  delivery:
+    name: Původní potvrzování · pouze převzetí starší sítě
